@@ -1,5 +1,5 @@
 .container {
-    max-width: 1444px;
+    max-width: 2000px;
     margin: auto;
 }
 
@@ -118,7 +118,7 @@
 
 .sec2 {
     background: url("img/sec2.jpg") no-repeat;
-    background-size: 100%;
+    background-size: auto;
     height: 866px;
 }
 
