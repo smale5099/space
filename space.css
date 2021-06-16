@@ -21,6 +21,12 @@
     margin: auto;
 }
 
+.container3 {
+    max-width: 1192px;
+    margin: auto;
+    position: relative;
+}
+
 .nav__frame {
     padding: 19px 31px 18px 0;
     display: flex;
@@ -46,8 +52,8 @@
 }
 
 .text {
-    top: 26%;
-    left: 7%;
+    top: 210px;
+    left: 1.5%;
     position: absolute;
 }
 
@@ -116,10 +122,11 @@
     position: relative;
 }
 
+
 .info {
+    top: 210px;
+    left: 1.5%;
     position: absolute;
-    top: 35%;
-    left: 8%;
 }
 
 .sec3 {
@@ -374,13 +381,18 @@ p {
     justify-content: space-between;
 }
 
-
-.moon {
+.moon_back {
+    background: black;
     position: relative;
     top: -25px;
-    background: url("img/moon.png");
+}
+
+.moon {
+    background: url("img/moon.png") no-repeat;
     background-size: auto;
     height: 437px;
+    max-width: 1444px;
+    margin: auto;
 }
 
 .footer {
@@ -459,8 +471,11 @@ a {
 
 @media (max-width: 1443px) {
     .container {
-        /*max-width: 769px;*/
         max-width: 100%;
+    }
+
+    .text {
+        left: 5%;
     }
 
     .info {
@@ -547,7 +562,9 @@ a {
 
     .moon {
         background-size: contain;
-        height: 233px;
+        max-height: 233px;
+        max-width: 769px;
+
     }
 
     .sec5 {
