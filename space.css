@@ -1,4 +1,4 @@
-.container {
+.con.container {
     max-width: 100%;
     margin: auto;
 }
@@ -152,7 +152,6 @@
 .box__tittle {
     font-family: Anton;
     font-size: 64px;
-    line-height: 9 < img src = "img/sec1.jpg" alt = "" class = "gui" > < div > dfaspdsap < / div > < div > fdskafj < / div > 4px;
     letter-spacing: -0.01em;
     color: #FFFFFF;
     max-width: 312px;
@@ -436,9 +435,9 @@ a {
 .nav__frame a {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
+    background-position: 0 100%;
     background-repeat: no-repeat;
-    background-size: 0% 2px;
+    background-size: 0 2px;
     transition: background-size .3s;
 }
 
@@ -460,7 +459,8 @@ a {
 
 @media (max-width: 1443px) {
     .container {
-        max-width: 769px;
+        /*max-width: 769px;*/
+        max-width: 100%;
     }
 
     .info {
