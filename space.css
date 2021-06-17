@@ -820,7 +820,7 @@ a {
         position: initial;
         background: none;
         margin-top: -240px;
-        width: 277px;
+        width: auto;
     }
 
     .moon_back {
