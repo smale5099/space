@@ -1,5 +1,5 @@
 .container {
-    max-width: 100%;
+    max-width: 320px;
     margin: auto;
 }
 
@@ -52,8 +52,8 @@
 }
 
 .text {
-    top: 210px;
-    left: 1.5%;
+    top: 212px;
+    left: -2.5%;
     position: absolute;
 }
 
@@ -271,7 +271,7 @@ p {
     color: #000000;
     text-align: center;
     position: relative;
-    top: 83%;
+    top: 84%;
 }
 
 .thumb__info {
@@ -469,13 +469,112 @@ a {
     height: 500px;
 }
 
+#menu__toggle {
+    opacity: 0;
+}
+
 @media (max-width: 1443px) {
-    .container {
-        max-width: 100%;
-    }
 
     .text {
+        top: 185px;
         left: 5%;
+    }
+
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 3%;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    /* контейнер меню */
+    .nav__frame {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: cadetblue;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 1;
+    }
+
+    /* элементы меню */
+    .nav__text {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .nav__text:hover {
+        background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .nav__frame {
+        visibility: visible;
+        left: 0;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+
+    .nav__frame {
+        transition-duration: .25s;
+    }
+
+    .nav__text {
+        transition-duration: .25s;
     }
 
     .info {
@@ -594,5 +693,141 @@ a {
     .footer__quest {
         position: absolute;
         top: 67%;
+    }
+}
+
+@media (max-width: 800px) {
+    .sec1 {
+        height: 730px;
+    }
+
+    .nav__logo img {
+        width: 152px;
+        height: 12px;
+    }
+
+    .text {
+        top: 34px;
+    }
+
+    .text__button {
+        padding: 18px 28px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+
+    .text__name {
+        font-size: 44px;
+        line-height: 50px;
+        max-width: 240px
+    }
+
+    .text__tittle {
+        font-size: 62px;
+        line-height: 72px;
+        margin-top: 25px;
+    }
+
+    .text__sub-tittle {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .sec2 {
+        height: 610px;
+    }
+
+    .info {
+        top: 119px;
+    }
+
+    .sec3__tittle {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .sec3__box {
+        position: relative;
+        left: 0;
+        height: 810px;
+        top: 614px;
+        padding-top: 65px;
+        padding-bottom: 103px;
+        max-width: 100%;
+    }
+
+    .box__tittle {
+        font-size: 62px;
+        line-height: 70px;
+    }
+
+    .box__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 55px;
+    }
+
+    p {
+        padding-top: 0;
+    }
+
+    .text__button {
+        font-size: 14px;
+        line-height: 19px;
+        padding: 23px 47px;
+    }
+
+    .sec4 {
+        display: block;
+        height: 2234px;
+        top: 625px;
+    }
+
+    .sec4__cards {
+        display: block;
+        padding-top: 70px;
+    }
+
+    .thumb {
+        margin: auto;
+        width: 284px;
+        height: 631px;
+        position: initial;
+        margin-bottom: 40px;
+    }
+
+    .thumb__img {
+        height: 43%;
+    }
+
+    .thumb__img2 {
+        height: 43%;
+    }
+
+    .thumb__img3 {
+        height: 43%;
+    }
+
+    .thumb__info {
+        height: 52%;
+        max-width: 100%;
+        padding: 18px 0 0 17px;
+    }
+
+    .sec4__btn {
+        position: initial;
+        background: none;
+        margin-top: -240px;
+        width: 277px;
+    }
+
+    .moon_back {
+        top: 2375px;
+    }
+
+    .sec5 {
+        top: 1772px;
     }
 }
