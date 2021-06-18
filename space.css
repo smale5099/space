@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 100%;
     margin: auto;
@@ -745,6 +749,7 @@ a {
     .sec3__tittle {
         position: absolute;
         z-index: -1;
+        width: 100px;
     }
 
     .sec3__box {
@@ -819,15 +824,100 @@ a {
     .sec4__btn {
         position: initial;
         background: none;
-        margin-top: -240px;
+        margin-top: 70px;
         width: auto;
     }
 
+    .sec4__button {
+        font-size: 14px;
+        line-height: 19px;
+        padding: 21px 47px;
+    }
+
     .moon_back {
-        top: 2375px;
+        top: 625px;
+        height: 170px;
+    }
+
+    .moon {
+        position: relative;
+        top: 63px;
+        max-width: 340px;
+        max-height: 104px;
     }
 
     .sec5 {
-        top: 1772px;
+        height: 1875px;
+        top: 625px;
     }
+
+    .container2 {
+        height: 1806px;
+        padding-left: 15px;
+    }
+
+    .faq {
+        padding-bottom: 0;
+    }
+
+    .faq__sub-tittle {
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 75%;
+    }
+
+    .faq__text {
+        max-width: 92%;
+    }
+
+    .footer {
+        top: 618px;
+        height: 429px;
+    }
+
+    .footer__nav {
+        width: 100%;
+        line-height: 0;
+        padding-left: 16px;
+    }
+
+    .footer__logo {
+        margin: 58px 0 38px 0;
+    }
+
+    .footer__logo a img {
+        width: 152px;
+        height: 11.75px;
+    }
+
+    .footer__frame {
+        display: block;
+        width: 0;
+    }
+
+    .footer__text {
+        margin-bottom: 40px;
+        width: 120px;
+        text-align: left;
+    }
+
+    .footer__text a {
+        font-size: 14px;
+        line-height: 10px;
+    }
+
+    .footer__quest {
+        font-size: 14px;
+        line-height: 19px;
+        top: 69%;
+    }
+
+    .text__button:hover:before {
+        height: 66px;
+    }
+
+    .sec4__button:hover:before {
+        height: 64px;
+    }
+
 }
