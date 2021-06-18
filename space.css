@@ -697,9 +697,10 @@ a {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     .sec1 {
         height: 730px;
+        background-position: -253px;
     }
 
     .nav__logo img {
@@ -916,5 +917,10 @@ a {
     .sec4__button:hover:before {
         height: 64px;
     }
+}
 
+@media (max-width: 345px) {
+    .sec2  {
+        background-position: -128px;
+    }
 }
