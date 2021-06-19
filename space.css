@@ -1,7 +1,7 @@
 .container {
     max-width: 100%;
     margin: auto;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .sec1 {
@@ -843,7 +843,7 @@ a {
     }
 
     .sec5 {
-        height: 1875px;
+        height: 2000px;
         top: 625px;
     }
 
