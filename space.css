@@ -1,7 +1,7 @@
 .container {
     max-width: 100%;
     margin: auto;
-    overflow-x: clip;
+    overflow: hidden;
 }
 
 .sec1 {
@@ -697,6 +697,11 @@ a {
 }
 
 @media (max-width: 767px) {
+
+    .container {
+        padding-bottom: 550px;
+    }
+
     .sec1 {
         height: 730px;
         background-position: -253px;
@@ -874,11 +879,11 @@ a {
     .footer__nav {
         width: 100%;
         line-height: 0;
-        padding-left: 16px;
     }
 
     .footer__logo {
         margin: 58px 0 38px 0;
+        padding-left: 16px;
     }
 
     .footer__logo a img {
@@ -889,6 +894,7 @@ a {
     .footer__frame {
         display: block;
         width: 0;
+        padding-left: 16px;
     }
 
     .footer__text {
