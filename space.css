@@ -923,8 +923,17 @@ a {
     }
 }
 
-@media (max-width: 345px) {
+
+@media (max-width: 425px) {
     .sec2  {
         background-position: -128px;
+    }
+
+    .text {
+        max-width: 325px;
+    }
+
+    .info {
+        max-width: 325px;
     }
 }
